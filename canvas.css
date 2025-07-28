@@ -1,0 +1,128 @@
+/* Base styles */
+body {
+  margin: 0;
+  font-family: 'Georgia', serif;
+  background: linear-gradient(135deg, #1f4037, #ff00a2); /* Green & fuchsia blend */
+  color: #fef6ff; /* Pale pink-lavender text */
+  transition: background 0.5s ease;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 2rem;
+  background-color: rgba(255, 0, 122, 0.2);
+  border-bottom: 1px solid #c3f584;
+}
+
+header h1 {
+  font-size: 2.8rem;
+  margin-bottom: 0.3rem;
+  color: #ffb3f0;
+  text-shadow: 0 0 10px #c3f584, 0 0 20px #ff00a2;
+  letter-spacing: 1px;
+}
+
+/* Navigation */
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #c3f584;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  background-color: #f3ffb3;
+  color: #1f4037;
+  box-shadow: 0 0 6px #ff00a2;
+}
+
+/* Intro section */
+.intro {
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.intro h2 {
+  font-size: 2rem;
+  color: #b5ffcc;
+  margin-bottom: 1rem;
+  transition: text-shadow 0.3s ease;
+  text-shadow: 0 0 8px #ff99cc;
+}
+
+.intro p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: auto;
+  line-height: 1.6;
+  color: #fff0f6;
+}
+
+/* About section */
+.about {
+  text-align: center;
+  padding: 2rem;
+}
+
+.about h2 {
+  font-size: 1.8rem;
+  color: #c3f584;
+}
+
+.about p {
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 1rem auto;
+  line-height: 1.5;
+  color: #fef6ff;
+}
+
+.about a {
+  color: #ff99cc;
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #ffd1f0;
+  border-top: 1px solid #ffe5f7;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2.2rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li a {
+    width: 100%;
+    text-align: center;
+  }
+
+  .intro h2,
+  .about h2 {
+    font-size: 1.6rem;
+  }
+}
