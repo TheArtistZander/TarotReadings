@@ -7,12 +7,14 @@
 
 /* 🌈 Body Gradient — Pink to Green */
 body {
+body {
   font-family: 'Georgia', serif;
-  background: linear-gradient(to bottom right, #ff99cc, #ccffcc);
-  color: #000; /* Black text for strong contrast */
+  background: linear-gradient(135deg, #b20067 0%, #ff00cc 50%, #ccff00 100%);
+  color: #000;
   line-height: 1.6;
   padding: 1rem;
 }
+
 
 /* ✨ Glow Text Styling */
 .glow-text {
