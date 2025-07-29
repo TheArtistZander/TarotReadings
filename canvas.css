@@ -5,12 +5,22 @@
   box-sizing: border-box;
 }
 
+/* 🌈 Body Gradient — Pink to Green */
 body {
   font-family: 'Georgia', serif;
-  background: linear-gradient(to right, #ffe6f0, #f0fff4);
-  color: #333;
+  background: linear-gradient(to bottom right, #ff99cc, #ccffcc);
+  color: #000; /* Black text for strong contrast */
   line-height: 1.6;
   padding: 1rem;
+}
+
+/* ✨ Glow Text Styling */
+.glow-text {
+  color: #000; /* Keep base text black */
+  text-shadow:
+    0 0 5px #ff99cc,
+    0 0 10px #ccffcc;
+  transition: text-shadow 0.3s ease-in-out;
 }
 
 /* 🌅 Banner Image */
