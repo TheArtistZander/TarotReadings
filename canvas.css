@@ -3,7 +3,7 @@ body {
   margin: 0;
   font-family: 'Georgia', serif;
   background: linear-gradient(135deg, #ff00cc, #a3ffae, #1f4037);
-  color: #fef6ff;
+  color: black; /* Updated for readability */
   transition: background 0.5s ease;
 }
 
@@ -13,23 +13,26 @@ img {
   display: block;
 }
 
-/* 📸 Banner & Header */
-.top-banner {
-  width: 100%;
-  max-height: 200px;
-  object-fit: cover;
-  margin-bottom: -10px;
-  box-shadow: 0 0 12px #c3f584;
-  border-bottom: 2px solid #ff00a2;
+/* ✨ Glow Text */
+.glow-text {
+  color: black;
+  text-shadow:
+    0 0 5px pink,
+    0 0 10px pink,
+    0 0 15px limegreen,
+    0 0 20px limegreen;
 }
 
+/* 📸 Banner & Header */
+.top-banner,
 .header-banner {
   width: 100%;
   max-height: 200px;
   object-fit: cover;
-  margin-bottom: 1rem;
+  box-shadow: 0 0 12px #c3f584;
   border-radius: 8px;
-  box-shadow: 0 0 12px #ff00a2;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #ff00a2;
 }
 
 header {
@@ -41,8 +44,7 @@ header {
 
 header h1 {
   font-size: 2.8rem;
-  color: #ffb3f0;
-  margin-bottom: 0.3rem;
+  color: black;
   text-shadow: 0 0 10px #c3f584, 0 0 20px #ff00a2;
   letter-spacing: 1px;
 }
@@ -82,9 +84,9 @@ nav ul li a.active {
 
 .intro h2 {
   font-size: 2rem;
-  color: #b5ffcc;
+  color: black;
+  text-shadow: 0 0 8px pink, 0 0 12px limegreen;
   margin-bottom: 1rem;
-  text-shadow: 0 0 8px #ff99cc;
 }
 
 .intro p {
@@ -92,7 +94,7 @@ nav ul li a.active {
   max-width: 600px;
   margin: auto;
   line-height: 1.6;
-  color: #fff0f6;
+  color: black;
 }
 
 .intro-img {
@@ -150,7 +152,8 @@ nav ul li a.active {
 
 .about-text h2 {
   font-size: 1.8rem;
-  color: #c3f584;
+  color: black;
+  text-shadow: 0 0 8px pink, 0 0 14px limegreen;
 }
 
 .about-text p {
@@ -158,7 +161,7 @@ nav ul li a.active {
   line-height: 1.5;
   max-width: 600px;
   margin: 1rem auto;
-  color: #fef6ff;
+  color: black;
 }
 
 .about-text a {
@@ -176,14 +179,14 @@ nav ul li a.active {
 
 .book-reading h2 {
   font-size: 2rem;
-  color: #ffb3f0;
-  text-shadow: 0 0 10px #c3f584;
+  color: black;
+  text-shadow: 0 0 10px pink, 0 0 18px limegreen;
   margin-bottom: 1rem;
 }
 
 .book-reading p {
   font-size: 1.2rem;
-  color: #fff0f6;
+  color: black;
   max-width: 600px;
   margin: 1rem auto;
   line-height: 1.6;
@@ -194,7 +197,7 @@ footer {
   text-align: center;
   padding: 1rem;
   font-size: 0.9rem;
-  color: #ffd1f0;
+  color: black;
   border-top: 1px solid #ffe5f7;
 }
 
