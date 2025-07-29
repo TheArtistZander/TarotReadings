@@ -168,6 +168,20 @@ footer {
   box-shadow: 0 0 12px #c3f584;
   border-bottom: 2px solid #ff00a2;
 }
+.sam-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin: 2rem auto;
+}
+
+.sam-photo {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px;
+  box-shadow: 0 0 12px #c3f584;
+}
 
   min-width: 250px;
 }
