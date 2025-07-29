@@ -1,4 +1,4 @@
-/* Base styles */
+/* 🌅 Base Styles */
 body {
   margin: 0;
   font-family: 'Georgia', serif;
@@ -7,24 +7,31 @@ body {
   transition: background 0.5s ease;
 }
 
-/* Global image settings */
 img {
   max-width: 100%;
   height: auto;
   display: block;
 }
 
-/* Top banner image */
+/* 📸 Banner & Header */
 .top-banner {
   width: 100%;
   max-height: 200px;
   object-fit: cover;
-  margin: 0 auto -10px auto;
+  margin-bottom: -10px;
   box-shadow: 0 0 12px #c3f584;
   border-bottom: 2px solid #ff00a2;
 }
 
-/* Header section */
+.header-banner {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 12px #ff00a2;
+}
+
 header {
   text-align: center;
   padding: 2rem;
@@ -34,13 +41,13 @@ header {
 
 header h1 {
   font-size: 2.8rem;
-  margin-bottom: 0.3rem;
   color: #ffb3f0;
+  margin-bottom: 0.3rem;
   text-shadow: 0 0 10px #c3f584, 0 0 20px #ff00a2;
   letter-spacing: 1px;
 }
 
-/* Navigation */
+/* 🧭 Navigation */
 nav ul {
   list-style: none;
   padding: 0;
@@ -67,17 +74,7 @@ nav ul li a.active {
   box-shadow: 0 0 6px #ff00a2;
 }
 
-/* Header image (optional) */
-.header-banner {
-  width: 100%;
-  max-height: 200px;
-  object-fit: cover;
-  margin-bottom: 1rem;
-  border-radius: 8px;
-  box-shadow: 0 0 12px #ff00a2;
-}
-
-/* Intro section */
+/* ✨ Intro Section */
 .intro {
   text-align: center;
   padding: 3rem 2rem;
@@ -88,7 +85,6 @@ nav ul li a.active {
   color: #b5ffcc;
   margin-bottom: 1rem;
   text-shadow: 0 0 8px #ff99cc;
-  transition: text-shadow 0.3s ease;
 }
 
 .intro p {
@@ -106,7 +102,7 @@ nav ul li a.active {
   box-shadow: 0 0 12px #ff99cc;
 }
 
-/* CTA section */
+/* 🧙 CTA Section */
 .cta-wrapper {
   text-align: center;
   padding: 2rem 0;
@@ -120,31 +116,16 @@ nav ul li a.active {
   box-shadow: 0 0 12px #c3f584;
 }
 
-/* About section */
-.about {
-  text-align: center;
-  padding: 2rem;
+/* 👤 About Section */
+.sam2-banner {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  margin: 2rem auto -1rem auto;
+  border-radius: 12px;
+  box-shadow: 0 0 12px #c3f584;
 }
 
-.about h2 {
-  font-size: 1.8rem;
-  color: #c3f584;
-}
-
-.about p {
-  font-size: 1.1rem;
-  max-width: 600px;
-  margin: 1rem auto;
-  line-height: 1.5;
-  color: #fef6ff;
-}
-
-.about a {
-  color: #ff99cc;
-  text-decoration: underline;
-}
-
-/* Side-by-side newspaper layout */
 .newspaper-layout {
   display: flex;
   align-items: flex-start;
@@ -153,7 +134,7 @@ nav ul li a.active {
   flex-wrap: wrap;
 }
 
-.side-img {
+.sam-photo {
   max-width: 300px;
   border-radius: 8px;
   box-shadow: 0 0 12px #ff99cc;
@@ -167,25 +148,25 @@ nav ul li a.active {
   padding: 0 1rem;
 }
 
-/* Sam portrait gallery */
-.sam-gallery {
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  flex-wrap: wrap;
-  margin: 2rem auto;
-  max-width: 700px;
+.about-text h2 {
+  font-size: 1.8rem;
+  color: #c3f584;
 }
 
-.sam-photo {
-  width: auto;
-  max-width: 45%;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 0 12px #c3f584;
+.about-text p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  max-width: 600px;
+  margin: 1rem auto;
+  color: #fef6ff;
 }
 
-/* Book a Reading section */
+.about-text a {
+  color: #ff99cc;
+  text-decoration: underline;
+}
+
+/* 🔮 Book a Reading */
 .book-reading {
   text-align: center;
   padding: 3rem 2rem;
@@ -208,7 +189,7 @@ nav ul li a.active {
   line-height: 1.6;
 }
 
-/* Footer section */
+/* 🪐 Footer */
 footer {
   text-align: center;
   padding: 1rem;
@@ -226,7 +207,7 @@ footer {
   box-shadow: 0 0 12px #ff00a2;
 }
 
-/* Responsive styles */
+/* 📱 Responsive Design */
 @media (max-width: 768px) {
   header h1 {
     font-size: 2.2rem;
@@ -243,7 +224,7 @@ footer {
   }
 
   .intro h2,
-  .about h2,
+  .about-text h2,
   .book-reading h2 {
     font-size: 1.6rem;
   }
@@ -263,7 +244,7 @@ footer {
   }
 
   .about-text {
-    padding: 0 1rem;
     text-align: left;
+    padding: 0 1rem;
   }
 }
