@@ -243,13 +243,13 @@ footer {
   }
 
 .side-img {
-  max-width: 50%; /* Shrinks to half of its container */
-  height: auto;
   display: block;
-  margin: 1rem auto;
+  max-width: 50%;
+  margin: 2rem auto 0 auto;
   border-radius: 8px;
   box-shadow: 0 0 12px #ff99cc;
 }
+
 
 
   .about-text {
