@@ -130,15 +130,22 @@ img:hover {
 
 /* 🪐 Footer */
 footer {
+  width: 100%;
+  margin-top: auto;
   text-align: center;
-  margin-top: 2rem;
+  position: relative;
+  bottom: 0;
 }
 
 .footer-img {
   width: 100%;
   height: auto;
-  margin-bottom: 1rem;
+  display: block;
+  margin: 0;
+  border-top: 4px solid #ff99cc;
+  box-shadow: 0 -4px 12px rgba(204, 255, 204, 0.3);
 }
+
 
 /* 📱 Responsive Tweaks */
 @media (min-width: 768px) {
