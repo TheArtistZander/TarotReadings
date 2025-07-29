@@ -7,7 +7,6 @@
 
 /* 🌈 Body Gradient — Pink to Green */
 body {
-body {
   font-family: 'Georgia', serif;
   background: linear-gradient(135deg, #b20067 0%, #ff00cc 50%, #ccff00 100%);
   color: #000;
