@@ -90,8 +90,15 @@ img:hover {
 
 /* ✨ CTA Image */
 .cta-img {
-  max-width: 500px;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
+
 
 /* 👤 About Section Layout */
 .newspaper-layout {
