@@ -7,6 +7,13 @@ body {
   transition: background 0.5s ease;
 }
 
+/* Global image settings */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 /* Header */
 header {
   text-align: center;
@@ -21,6 +28,27 @@ header h1 {
   color: #ffb3f0;
   text-shadow: 0 0 10px #c3f584, 0 0 20px #ff00a2;
   letter-spacing: 1px;
+}
+
+/* Top banner image */
+.top-banner {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  display: block;
+  margin-bottom: -10px;
+  box-shadow: 0 0 12px #c3f584;
+  border-bottom: 2px solid #ff00a2;
+}
+
+/* Header image */
+.header-banner {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 12px #ff00a2;
 }
 
 /* Navigation */
@@ -72,6 +100,27 @@ nav ul li a.active {
   color: #fff0f6;
 }
 
+.intro-img,
+.cta-img {
+  max-width: 500px;
+  margin: 2rem auto;
+  display: block;
+  border-radius: 12px;
+  box-shadow: 0 0 12px #ff99cc;
+}
+
+/* CTA wrapper */
+.cta-wrapper {
+  text-align: center;
+  padding: 2rem 0;
+  background-color: rgba(255, 0, 122, 0.1);
+}
+
+.cta-img {
+  max-width: 90%;
+  box-shadow: 0 0 12px #c3f584;
+}
+
 /* About section */
 .about {
   text-align: center;
@@ -96,6 +145,66 @@ nav ul li a.active {
   text-decoration: underline;
 }
 
+/* Sam side-by-side photos */
+.sam-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin: 2rem auto;
+}
+
+.sam-photo {
+  max-width: 45%;
+  border-radius: 8px;
+  box-shadow: 0 0 12px #c3f584;
+}
+
+/* Newspaper layout */
+.newspaper-layout {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+
+.side-img {
+  max-width: 300px;
+  border-radius: 8px;
+  box-shadow: 0 0 12px #ff99cc;
+  margin-bottom: 1rem;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 250px;
+  text-align: left;
+}
+
+/* Book a Reading */
+.book-reading {
+  text-align: center;
+  padding: 3rem 2rem;
+  background-color: rgba(255, 0, 122, 0.1);
+  border-top: 1px solid #c3f584;
+}
+
+.book-reading h2 {
+  font-size: 2rem;
+  color: #ffb3f0;
+  text-shadow: 0 0 10px #c3f584;
+  margin-bottom: 1rem;
+}
+
+.book-reading p {
+  font-size: 1.2rem;
+  color: #fff0f6;
+  max-width: 600px;
+  margin: 1rem auto;
+  line-height: 1.6;
+}
+
 /* Footer */
 footer {
   text-align: center;
@@ -103,6 +212,15 @@ footer {
   font-size: 0.9rem;
   color: #ffd1f0;
   border-top: 1px solid #ffe5f7;
+}
+
+.footer-img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 12px #ff00a2;
 }
 
 /* Responsive styles */
@@ -122,67 +240,26 @@ footer {
   }
 
   .intro h2,
-  .about h2 {
+  .about h2,
+  .book-reading h2 {
     font-size: 1.6rem;
   }
-}
-.footer-img {
-  width: 100%;
-  max-height: 200px;
-  object-fit: cover;
-  margin-bottom: 1rem;
-  border-radius: 8px;
-  box-shadow: 0 0 12px #ff00a2;
-}
-.cta-img {
-  width: 100%;
-  max-width: 500px;
-  margin: 2rem auto;
-  display: block;
-  border-radius: 12px;
-  box-shadow: 0 0 15px #ff00a2;
-}
-.newspaper-layout {
-  display: flex;
-  align-items: flex-start;
-  gap: 2rem;
-  padding: 2rem;
-  flex-wrap: wrap;
-}
 
-.side-img {
-  width: 100%;
-  max-width: 300px;
-  border-radius: 8px;
-  box-shadow: 0 0 12px #ff99cc;
-}
+  .sam-photo {
+    max-width: 90%;
+  }
 
-.about-text {
-  flex: 1;
-  .top-banner {
-  width: 100%;
-  max-height: 250px;
-  object-fit: cover;
-  display: block;
-  margin-bottom: -10px;
-  box-shadow: 0 0 12px #c3f584;
-  border-bottom: 2px solid #ff00a2;
-}
-.sam-gallery {
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  flex-wrap: wrap;
-  margin: 2rem auto;
-}
+  .newspaper-layout {
+    flex-direction: column;
+    text-align: center;
+  }
 
-.sam-photo {
-  width: 100%;
-  max-width: 300px;
-  border-radius: 8px;
-  box-shadow: 0 0 12px #c3f584;
-}
+  .side-img {
+    margin: 0 auto 1rem;
+  }
 
-  min-width: 250px;
+  .about-text {
+    text-align: left;
+    padding: 0 1rem;
+  }
 }
-
