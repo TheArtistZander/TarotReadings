@@ -2,8 +2,8 @@
 body {
   margin: 0;
   font-family: 'Georgia', serif;
-  background: linear-gradient(135deg, #ff00cc, #a3ffae, #1f4037); /* Vibrant fuchsia to mint to forest green */
-  color: #fef6ff; /* Pale pink-lavender text */
+  background: linear-gradient(135deg, #ff00cc, #a3ffae, #1f4037);
+  color: #fef6ff;
   transition: background 0.5s ease;
 }
 
@@ -14,7 +14,17 @@ img {
   display: block;
 }
 
-/* Header */
+/* Top banner image */
+.top-banner {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  margin: 0 auto -10px auto;
+  box-shadow: 0 0 12px #c3f584;
+  border-bottom: 2px solid #ff00a2;
+}
+
+/* Header section */
 header {
   text-align: center;
   padding: 2rem;
@@ -28,27 +38,6 @@ header h1 {
   color: #ffb3f0;
   text-shadow: 0 0 10px #c3f584, 0 0 20px #ff00a2;
   letter-spacing: 1px;
-}
-
-/* Top banner image */
-.top-banner {
-  width: 100%;
-  max-height: 200px;
-  object-fit: cover;
-  display: block;
-  margin: 0 auto -10px auto; /* Center horizontally */
-  box-shadow: 0 0 12px #c3f584;
-  border-bottom: 2px solid #ff00a2;
-}
-
-/* Header image */
-.header-banner {
-  width: 100%;
-  max-height: 200px;
-  object-fit: cover;
-  margin-bottom: 1rem;
-  border-radius: 8px;
-  box-shadow: 0 0 12px #ff00a2;
 }
 
 /* Navigation */
@@ -78,6 +67,16 @@ nav ul li a.active {
   box-shadow: 0 0 6px #ff00a2;
 }
 
+/* Header image (optional) */
+.header-banner {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 12px #ff00a2;
+}
+
 /* Intro section */
 .intro {
   text-align: center;
@@ -88,8 +87,8 @@ nav ul li a.active {
   font-size: 2rem;
   color: #b5ffcc;
   margin-bottom: 1rem;
-  transition: text-shadow 0.3s ease;
   text-shadow: 0 0 8px #ff99cc;
+  transition: text-shadow 0.3s ease;
 }
 
 .intro p {
@@ -100,16 +99,14 @@ nav ul li a.active {
   color: #fff0f6;
 }
 
-.intro-img,
-.cta-img {
+.intro-img {
   max-width: 500px;
   margin: 2rem auto;
-  display: block;
   border-radius: 12px;
   box-shadow: 0 0 12px #ff99cc;
 }
 
-/* CTA wrapper */
+/* CTA section */
 .cta-wrapper {
   text-align: center;
   padding: 2rem 0;
@@ -117,7 +114,9 @@ nav ul li a.active {
 }
 
 .cta-img {
-  max-width: 90%;
+  max-width: 500px;
+  margin: 1.5rem auto;
+  border-radius: 12px;
   box-shadow: 0 0 12px #c3f584;
 }
 
@@ -145,22 +144,7 @@ nav ul li a.active {
   text-decoration: underline;
 }
 
-/* Sam side-by-side photos */
-.sam-gallery {
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  flex-wrap: wrap;
-  margin: 2rem auto;
-}
-
-.sam-photo {
-  max-width: 45%;
-  border-radius: 8px;
-  box-shadow: 0 0 12px #c3f584;
-}
-
-/* Newspaper layout */
+/* Side-by-side newspaper layout */
 .newspaper-layout {
   display: flex;
   align-items: flex-start;
@@ -180,9 +164,28 @@ nav ul li a.active {
   flex: 1;
   min-width: 250px;
   text-align: left;
+  padding: 0 1rem;
 }
 
-/* Book a Reading */
+/* Sam portrait gallery */
+.sam-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin: 2rem auto;
+  max-width: 700px;
+}
+
+.sam-photo {
+  width: auto;
+  max-width: 45%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 12px #c3f584;
+}
+
+/* Book a Reading section */
 .book-reading {
   text-align: center;
   padding: 3rem 2rem;
@@ -205,7 +208,7 @@ nav ul li a.active {
   line-height: 1.6;
 }
 
-/* Footer */
+/* Footer section */
 footer {
   text-align: center;
   padding: 1rem;
@@ -247,6 +250,7 @@ footer {
 
   .sam-photo {
     max-width: 90%;
+    margin: auto;
   }
 
   .newspaper-layout {
@@ -259,7 +263,7 @@ footer {
   }
 
   .about-text {
-    text-align: left;
     padding: 0 1rem;
+    text-align: left;
   }
 }
