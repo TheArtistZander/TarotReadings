@@ -1,259 +1,108 @@
-/* 🌅 Base Styles */
-body {
+/* 🔄 Reset & Global Settings */
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   font-family: 'Georgia', serif;
-  background: linear-gradient(135deg, #ff00cc, #a3ffae, #1f4037);
-  color: black; /* Updated for readability */
-  transition: background 0.5s ease;
+  background: linear-gradient(to right, #ffe6f0, #f0fff4);
+  color: #333;
+  line-height: 1.6;
+  padding: 1rem;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-/* ✨ Glow Text */
-.glow-text {
-  color: black;
-  text-shadow:
-    0 0 5px pink,
-    0 0 10px pink,
-    0 0 15px limegreen,
-    0 0 20px limegreen;
-}
-
-/* 📸 Banner & Header */
-.top-banner,
-.header-banner {
-  width: 100%;
-  max-height: 200px;
-  object-fit: cover;
-  box-shadow: 0 0 12px #c3f584;
-  border-radius: 8px;
-  margin-bottom: 1rem;
-  border-bottom: 2px solid #ff00a2;
-}
-
-header {
-  text-align: center;
-  padding: 2rem;
-  background-color: rgba(255, 0, 122, 0.2);
-  border-bottom: 1px solid #c3f584;
-}
-
-header h1 {
-  font-size: 2.8rem;
-  color: black;
-  text-shadow: 0 0 10px #c3f584, 0 0 20px #ff00a2;
-  letter-spacing: 1px;
-}
-
-/* 🧭 Navigation */
+/* 🧭 Navigation Bar */
 nav ul {
   list-style: none;
-  padding: 0;
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
-  gap: 1rem;
-  margin-top: 1rem;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem 0;
 }
 
 nav ul li a {
   text-decoration: none;
-  color: #c3f584;
-  font-weight: bold;
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
-  transition: background 0.3s ease, color 0.3s ease;
+  color: #444;
+  transition: color 0.3s ease;
 }
 
-nav ul li a:hover,
+nav ul li a:hover {
+  color: #ff66cc;
+}
+
 nav ul li a.active {
-  background-color: #f3ffb3;
-  color: #1f4037;
-  box-shadow: 0 0 6px #ff00a2;
-}
-
-/* ✨ Intro Section */
-.intro {
-  text-align: center;
-  padding: 3rem 2rem;
-}
-
-.intro h2 {
-  font-size: 2rem;
-  color: black;
-  text-shadow: 0 0 8px pink, 0 0 12px limegreen;
-  margin-bottom: 1rem;
-}
-
-.intro p {
-  font-size: 1.2rem;
-  max-width: 600px;
-  margin: auto;
-  line-height: 1.6;
-  color: black;
-}
-
-.intro-img {
-  max-width: 500px;
-  margin: 2rem auto;
-  border-radius: 12px;
-  box-shadow: 0 0 12px #ff99cc;
-}
-
-/* 🧙 CTA Section */
-.cta-wrapper {
-  text-align: center;
-  padding: 2rem 0;
-  background-color: rgba(255, 0, 122, 0.1);
-}
-
-.cta-img {
-  max-width: 500px;
-  margin: 1.5rem auto;
-  border-radius: 12px;
-  box-shadow: 0 0 12px #c3f584;
-}
-
-/* 👤 About Section */
-.sam2-banner {
-  width: 100%;
-  max-height: 300px;
-  object-fit: cover;
-  margin: 2rem auto -1rem auto;
-  border-radius: 12px;
-  box-shadow: 0 0 12px #c3f584;
-}
-
-.newspaper-layout {
-  display: flex;
-  align-items: flex-start;
-  gap: 2rem;
-  padding: 2rem;
-  flex-wrap: wrap;
-}
-
-.sam-photo {
-  max-width: 300px;
-  border-radius: 8px;
-  box-shadow: 0 0 12px #ff99cc;
-  margin-bottom: 1rem;
-}
-
-.about-text {
-  flex: 1;
-  min-width: 250px;
-  text-align: left;
-  padding: 0 1rem;
-}
-
-.about-text h2 {
-  font-size: 1.8rem;
-  color: black;
-  text-shadow: 0 0 8px pink, 0 0 14px limegreen;
-}
-
-.about-text p {
-  font-size: 1.1rem;
-  line-height: 1.5;
-  max-width: 600px;
-  margin: 1rem auto;
-  color: black;
-}
-
-.about-text a {
-  color: #ff99cc;
+  color: #ff66cc;
+  font-weight: bold;
   text-decoration: underline;
 }
 
-/* 🔮 Book a Reading */
-.book-reading {
-  text-align: center;
-  padding: 3rem 2rem;
-  background-color: rgba(255, 0, 122, 0.1);
-  border-top: 1px solid #c3f584;
-}
-
-.book-reading h2 {
+/* ✨ Heading with Sparkle Hover Effect */
+.intro h2 {
   font-size: 2rem;
-  color: black;
-  text-shadow: 0 0 10px pink, 0 0 18px limegreen;
-  margin-bottom: 1rem;
-}
-
-.book-reading p {
-  font-size: 1.2rem;
-  color: black;
-  max-width: 600px;
-  margin: 1rem auto;
-  line-height: 1.6;
-}
-
-/* 🪐 Footer */
-footer {
   text-align: center;
-  padding: 1rem;
-  font-size: 0.9rem;
-  color: black;
-  border-top: 1px solid #ffe5f7;
+  margin-top: 2rem;
+  text-shadow: none;
+  transition: text-shadow 0.3s ease-in-out;
 }
 
-.footer-img {
-  width: 100%;
-  max-height: 200px;
-  object-fit: cover;
-  margin-bottom: 1rem;
-  border-radius: 8px;
-  box-shadow: 0 0 12px #ff00a2;
-}
-
-/* 📱 Responsive Design */
-@media (max-width: 768px) {
-  header h1 {
-    font-size: 2.2rem;
-  }
-
-  nav ul {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  nav ul li a {
-    width: 100%;
-    text-align: center;
-  }
-
-  .intro h2,
-  .about-text h2,
-  .book-reading h2 {
-    font-size: 1.6rem;
-  }
-
-  .sam-photo {
-    max-width: 90%;
-    margin: auto;
-  }
-
-  .newspaper-layout {
-    flex-direction: column;
-    text-align: center;
-  }
-
-.side-img {
+/* 🖼️ Image Styling */
+img {
+  max-width: 100%;
+  height: auto;
   display: block;
-  max-width: 50%;
-  margin: 2rem auto 0 auto;
-  border-radius: 8px;
-  box-shadow: 0 0 12px #ff99cc;
+  margin: 1rem auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
 
+img:hover {
+  transform: scale(1.03);
+}
 
+/* 📦 Responsive Image Wrapper */
+.image-wrapper {
+  width: 100%;
+  padding: 1rem;
+}
 
-  .about-text {
-    text-align: left;
-    padding: 0 1rem;
+@media (min-width: 768px) {
+  .image-wrapper {
+    max-width: 600px;
+    margin: 0 auto;
   }
+}
+
+/* 🃏 Tarot Card Section */
+.tarot-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.tarot-card {
+  background: #fff0f5;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(255, 204, 255, 0.5);
+  padding: 1rem;
+  width: 200px;
+  transition: transform 0.3s ease;
+}
+
+.tarot-card:hover {
+  transform: scale(1.05);
+}
+
+/* 🚫 Clean-Up: Remove Unused Elements */
+.alert-banner,
+.popup-message,
+.old-sparkle,
+#legacyModal,
+.outdated-card-style {
+  display: none;
 }
