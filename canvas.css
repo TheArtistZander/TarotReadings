@@ -2,7 +2,7 @@
 body {
   margin: 0;
   font-family: 'Georgia', serif;
-  background: linear-gradient(135deg, #1f4037, #ff00a2); /* Green & fuchsia blend */
+  background: linear-gradient(135deg, #ff00cc, #a3ffae, #1f4037); /* Vibrant fuchsia to mint to forest green */
   color: #fef6ff; /* Pale pink-lavender text */
   transition: background 0.5s ease;
 }
