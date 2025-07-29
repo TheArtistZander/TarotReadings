@@ -1,4 +1,4 @@
-/* 🔄 Reset & Global Settings */
+/* 🧹 Reset & Base Layout */
 * {
   margin: 0;
   padding: 0;
@@ -13,13 +13,22 @@ body {
   padding: 1rem;
 }
 
-/* 🧭 Navigation Bar */
+/* 🌅 Banner Image */
+.top-banner {
+  width: 100%;
+  height: auto;
+  border-bottom: 4px solid #ff99cc;
+  box-shadow: 0 4px 12px rgba(255, 153, 204, 0.3);
+  margin-bottom: 1rem;
+}
+
+/* 🧭 Navigation */
 nav ul {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 2rem;
+  gap: 1.5rem;
   padding: 1rem 0;
 }
 
@@ -39,16 +48,21 @@ nav ul li a.active {
   text-decoration: underline;
 }
 
-/* ✨ Heading with Sparkle Hover Effect */
-.intro h2 {
-  font-size: 2rem;
+/* ✨ Headings & Glow Text */
+h1, h2, .glow-text {
   text-align: center;
-  margin-top: 2rem;
-  text-shadow: none;
+  color: #1f4037;
+  text-shadow: 0 0 6px #ff99cc;
+  margin-bottom: 1rem;
   transition: text-shadow 0.3s ease-in-out;
 }
 
-/* 🖼️ Image Styling */
+/* 📖 Sections */
+section {
+  padding: 2rem 1rem;
+}
+
+/* 📸 Images */
 img {
   max-width: 100%;
   height: auto;
@@ -63,46 +77,73 @@ img:hover {
   transform: scale(1.03);
 }
 
-/* 📦 Responsive Image Wrapper */
-.image-wrapper {
-  width: 100%;
-  padding: 1rem;
+/* ✨ CTA Image */
+.cta-img {
+  max-width: 500px;
 }
 
-@media (min-width: 768px) {
-  .image-wrapper {
-    max-width: 600px;
-    margin: 0 auto;
-  }
+/* 👤 About Section Layout */
+.newspaper-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
-/* 🃏 Tarot Card Section */
-.tarot-section {
+.sam-gallery {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1.5rem;
+  gap: 1rem;
+}
+
+.sam-photo {
+  max-width: 300px;
+}
+
+/* 📖 About Text */
+.about-text {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* 🔮 Booking */
+.book-reading {
+  background: #fff0f5;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 0 8px rgba(255, 204, 255, 0.5);
+  text-align: center;
+  max-width: 700px;
+  margin: 2rem auto;
+}
+
+/* 🪐 Footer */
+footer {
+  text-align: center;
   margin-top: 2rem;
 }
 
-.tarot-card {
-  background: #fff0f5;
-  border-radius: 12px;
-  box-shadow: 0 0 10px rgba(255, 204, 255, 0.5);
-  padding: 1rem;
-  width: 200px;
-  transition: transform 0.3s ease;
+.footer-img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
 }
 
-.tarot-card:hover {
-  transform: scale(1.05);
-}
+/* 📱 Responsive Tweaks */
+@media (min-width: 768px) {
+  .newspaper-layout {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+  }
 
-/* 🚫 Clean-Up: Remove Unused Elements */
-.alert-banner,
-.popup-message,
-.old-sparkle,
-#legacyModal,
-.outdated-card-style {
-  display: none;
+  .about-text,
+  .book-reading {
+    text-align: left;
+  }
+
+  .cta-img {
+    max-width: 600px;
+  }
 }
