@@ -242,9 +242,15 @@ footer {
     text-align: center;
   }
 
-  .side-img {
-    margin: 0 auto 1rem;
-  }
+.side-img {
+  max-width: 50%; /* Shrinks to half of its container */
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+  border-radius: 8px;
+  box-shadow: 0 0 12px #ff99cc;
+}
+
 
   .about-text {
     text-align: left;
